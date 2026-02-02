@@ -30,7 +30,6 @@ Preguntas:  ¿Qué ciudades de America Latina presenta alta congestion de tráfi
 ![NumPy](https://img.shields.io/badge/NumPy-%23357ebd.svg?style=for-the-badge&logo=scipy&logoColor=white)
 ![Limpieza de datos](https://img.shields.io/badge/Limpieza_de_datos-295F98?style=for-the-badge)
 ![Transformación de datos](https://img.shields.io/badge/Transformación_de_datos-295F98?style=for-the-badge)
-![Análisis de cohortes](https://img.shields.io/badge/Análisis_de_cohortes-295F98?style=for-the-badge)
 ![Visualizacion de datos](https://img.shields.io/badge/Visualización_de_datos-295F98?style=for-the-badge)
 ![Estadística Descriptiva](https://img.shields.io/badge/Estadística%20Descriptiva-295F98?style=for-the-badge&logo=chart&logoColor=white)
 
@@ -57,4 +56,27 @@ Se puede ver una amplia variedad de desarollo economico, urbano o de productivid
 3. **Grafico de Barras: PIB vs Retraso de Tráfico**
 El PIB no es la variable explicativa que buscamos para entender porque se da la congestion en las ciudades latinoamericanas, no estan estrictamente correlacionadas.
 <img width="593" height="515" alt="Barras PiBvsTrafico" src="https://github.com/user-attachments/assets/ad1cfc7b-3d73-4f04-b779-e7ce9b1b8939" />
+
+
+## 2. Analisis de Embudo y Retención para Mercado Libre 
+Variables: Pais, Embudo, Retención por cohorte (D7,D14,D21,D28), agrupación por eventos (device_category y referral_source)
+Objetivo: entender en que etapa del proceso se pierden usuarios del pagina web para retener más personas con compras efectiva. Mapear el embudo de conversión completo de la pagina web, identificar puntos de fuga y evaluar la retención de usuarios por cohortes.
+Preguntas: ¿En que etapa se pierden mas usuarios? ¿como varía la caida porcentual de usuarios por pais? ¿como se comporta la retención por país? ¿cual etapa se deberia de mejorar primero?
+
+# Herramientas
+![SQL](https://img.shields.io/badge/SQL-357ebd?style=for-the-badge)
+![Excel](https://img.shields.io/badge/Excel-357ebd?style=for-the-badge)
+![Limpieza de datos](https://img.shields.io/badge/Limpieza_de_datos-295F98?style=for-the-badge)
+![Transformación de datos](https://img.shields.io/badge/Transformación_de_datos-295F98?style=for-the-badge)
+![Análisis de cohortes](https://img.shields.io/badge/Análisis_de_cohortes-295F98?style=for-the-badge)
+![Visualizacion de datos](https://img.shields.io/badge/Visualización_de_datos-295F98?style=for-the-badge)
+![Estadística Descriptiva](https://img.shields.io/badge/Estadística%20Descriptiva-295F98?style=for-the-badge&logo=chart&logoColor=white)
+
+# Proceso
+Se comienza entendio el comportamiento de los datos de cada una de las tablas y como es el flujo de usuarios dentro de la plataforma; para luego pasar a crear el embudo general entendiendo la cantidad de usuarios por cada etapa en un periodo de tiempo (2025-01-01 y 2025-08-31) y luego se detecta en que estapa del funnel por pais se pierden mas usuarios. Se finaliza con el calculo de la retencion de usuarios activos por cohorte y periodos de dias D7, D14, D21, D28.
+
+# Concluciones 
+- En la etapa que se deberia intervenir para hacer una mejora inicial es en la etapa de add_to_cart, dado a que es donde mas se van los usuarios
+- A pesar de que hay paises que atraves del tiempo se retienen más usuarios, no son el país que más compra. Ejemplo México es el 3er pais con más compras, pero es el que más retiene usuarios; en cambio, por el lado de Uruguay que es el país donde más compra, no tiene la mejor tasa de retención en el tiempo al compararlo con otros paises, pero aun asi se considera el 3er pais en retener hasta por 28 días en la pagina web.
+
 
