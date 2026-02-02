@@ -11,8 +11,8 @@ Este repositorio de Github fue creado para mostrar proyectos que he desarrollado
 - Power Bi
 
 ## Contactame
-* LinkedIn: 
-* Correo
+* LinkedIn: [![LinkedIn: Sara](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sara-jimenez-data-finance)
+* Correo: Sara96jimenezs@gmail.com
 
 ***
 # Proyectos
